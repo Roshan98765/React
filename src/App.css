@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stocks-container{
+  width: 100%;
+  background-color: rgba(77, 5, 90, 0.756);
+  padding: 20px auto;
+  height: 60vh;
+  overflow: scroll;
+  margin: 20px auto;
+  text-align: left;
+}
+.stocks-container .stocks-item {
+  display: flex;
+  margin: 10px auto;
+}
+
+.stocks-container .stocks-item.heading {
+  color: #040101;
+}
+
+.stocks-container .stocks-item .sn{
+  flex-basis: 5%;
+}
+.stocks-container .stocks-item .sname{
+  flex-basis: 75%;
+}
+.stocks-container .stocks-item .symbol{
+  flex-basis: 10%;
+}
+.stocks-container .stocks-item .sid{
+  flex-basis: 10%;
+}
+
+.delete-modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background-color: #ffffff73;
+}
+
+.delete-modal-container .modal-body {
+  background-color: rgb(5, 48, 34);
+  padding: 15px 30px;
+  border-radius: 8px;
+}
