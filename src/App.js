@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BillingList from "./Components/BillingList";
 import { STOCKS } from "./constant";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 
 function App() {
   const [whatToShow, setWhatToShow] = useState("billing");
@@ -69,6 +69,11 @@ function App() {
         <Link to="/billing">BillingList</Link>
         <Link to="/subject">Subjects</Link>
         <Link to="/">Cashflow</Link>
+
+        <NavLink to="/stocks">stocks</NavLink>
+        <NavLink to="/billing">BillingList</NavLink>
+        <NavLink to="/subject">Subjects</NavLink>
+        <NavLink to="/">Cashflow</NavLink>
 
         <Routes>
           <Route path="/" element={<CashFlowCalculator />} />
